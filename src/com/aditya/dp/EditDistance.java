@@ -29,6 +29,6 @@ public class EditDistance {
     }
 
     public static void main(String[] args) {
-        System.out.println("Min Op : "+findMinEditOperation("abc", "yabd"));
+        System.out.println("Min Operation : "+findMinEditOperation("abc", "yabd"));
     }
 }
