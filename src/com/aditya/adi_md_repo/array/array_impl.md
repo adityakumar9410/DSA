@@ -1,3 +1,5 @@
+```java
+
 public class Array {
 
     private int[] items;
@@ -67,3 +69,5 @@ public class Array {
         array.printArray();
     }
 }
+
+```
