@@ -1,14 +1,16 @@
-##### Bitbise operators
+## Bitbise operators
+
 &(AND):true if both true
 101
 100
------
+---
 100
 
 ||(OR):true if anyone is true
+
 101
 100
--------
+---
 101
 
 
