@@ -3,26 +3,26 @@
 &(AND):true if both true
 101
 100
----
+
 100
 
 ||(OR):true if anyone is true
 
 101
 100
----
+
 101
 
 
 ^(XOR):If both bit are different then 1 if same then 0
 101
 100
----
+
 001
 
 
 ~(NOT): complement operation . It toggles all bit of number .i.e  0 replaced by 1 and vice-versa
-00000011 becomes 111111100
+ 00000011 becomes 111111100
 
 
 >>(RS):binary op shift bit toward right (convert to 2's complement then shifting in case of -ve number)
