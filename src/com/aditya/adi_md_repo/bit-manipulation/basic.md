@@ -25,7 +25,7 @@
  00000011 becomes 111111100
 
 
->>(RS):binary op shift bit toward right (convert to 2's complement then shifting in case of -ve number)
+(>> )(RS):binary op shift bit toward right (convert to 2's complement then shifting in case of -ve number)
 x=5 (0000101)
 k=2
 x>>k= (00001)
@@ -33,12 +33,12 @@ result= x/2^k
 
 <<(LS): shifts bit toward left
 x==0000101
-k=2
-x<<k
+k=2)
+(x<<k
 0010100
 result=x*2^k
 
->>>(unsigned right shift op:   only java):considers sign bit also then shifting
+(>>>)(unsigned right shift op:   only java):considers sign bit also then shifting
 
 
 
