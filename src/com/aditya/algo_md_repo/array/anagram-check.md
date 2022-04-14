@@ -1,7 +1,7 @@
 ### 1. Check Anagram
 Anagram is a word or phrase formed from another by rearranging its letters. E.g. angel is an anagram of  glean
 
-![My Photo](https://github.com/adityakumar9410/DSA/blob/main/src/com/aditya/algo_md_repo/misc/Photo.jpg)
+![My Photo](../misc/Photo.jpg)
 
 ```java
  // sorting method TC: O(nlog(n)) || SC: O(n)
