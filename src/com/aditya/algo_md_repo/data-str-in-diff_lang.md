@@ -31,4 +31,15 @@ return make_pair(num1, num2)
 return [num1, num2]
 
 # Array
-
+##### Java
+int[] arr = new int[]{1,2,3,45};
+</br>
+arr.length
+##### C++
+vector<int> vec;
+</br>
+vec.size()
+##### Python
+arr=[1,2]
+</br>
+for i, num in enumerate(arr)
