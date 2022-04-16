@@ -93,3 +93,102 @@ public class Solution {
 }
 
 ```
+
+C++ Impl
+```cpp
+#include <iostream>
+#include <cmath>
+#include <float.h>
+using namespace std;
+class BST
+{
+public:
+    int value = 0;
+    BST *left;
+    BST *right;
+
+    BST(int val)
+    {
+        value = val;
+        left = right = nullptr;
+    }
+};
+
+int findClosestValueInBstRecur(BST *tree, int target);
+int findClosestValueInBstItr(BST *tree, int target);
+int findClosestValueInBstRecurHelper(BST *tree, int target, double closest);
+int findClosestValueInBstItrHelper(BST *tree, int target, double closest);
+
+// Average: O(log(n)) time | O(log(n)) space
+// Worst: O(n) time | O(n) space
+int findClosestValueInBstRecur(BST *tree, int target)
+{
+    return findClosestValueInBstRecurHelper(tree, target, DBL_MAX);
+}
+int findClosestValueInBstRecurHelper(BST *tree, int target, double closest)
+{
+    if (abs(target - closest) > abs(target - tree->value))
+    {
+        closest = tree->value;
+    }
+    if (target < tree->value && tree->left != NULL)
+    {
+        return findClosestValueInBstRecurHelper(tree->left, target, closest);
+    }
+    else if (target > tree->value && tree->right != NULL)
+    {
+        return findClosestValueInBstRecurHelper(tree->right, target, closest);
+    }
+    else
+    {
+        return closest;
+    }
+}
+
+// Average: O(log(n)) time | O(1) space
+// Worst: O(n) time | O(1) space
+int findClosestValueInBstItr(BST *tree, int target)
+{
+    return findClosestValueInBstItrHelper(tree, target, DBL_MAX);
+}
+int findClosestValueInBstItrHelper(BST *tree, int target, double closest)
+{
+    BST *currentNode = tree;
+    while (currentNode != NULL)
+    {
+        if (abs(target - closest) > abs(target - currentNode->value))
+        {
+            closest = currentNode->value;
+        }
+        if (target < currentNode->value)
+        {
+            currentNode = currentNode->left;
+        }
+        else if (target > currentNode->value)
+        {
+            currentNode = currentNode->right;
+        }
+        else
+        {
+            break;
+        }
+    }
+    return closest;
+}
+
+int main()
+{
+    BST *root = new BST(10);
+    root->left = new BST(5);
+    root->left->left = new BST(2);
+    root->left->left->left = new BST(1);
+    root->left->right = new BST(5);
+    root->right = new BST(15);
+    root->right->left = new BST(13);
+    root->right->left->right = new BST(14);
+    root->right->right = new BST(22);
+
+    cout << "Closest Val ITR: " << findClosestValueInBstItr(root, 12) << endl;
+}
+
+```
