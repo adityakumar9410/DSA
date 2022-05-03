@@ -1,6 +1,8 @@
 ### 1. Check Anagram
 Anagram is a word or phrase formed from another by rearranging its letters. E.g. angel is an anagram of  glean
 
+![My Photo](../misc/Photo.jpg)
+
 ```java
  // sorting method TC: O(nlog(n)) || SC: O(n)
     public static boolean checkAnagram1(String s1, String s2) {
