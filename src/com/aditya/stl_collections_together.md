@@ -16,6 +16,13 @@
 | remove(nums.begin(), nums.end(), value);| nums.remove(value);                      | nums.remove(value)          |                                                                                                
 
 
+### Deque
+|      C++                                |                  Java                    |             Python          | 
+| ----------------------------------------| ---------------------------------------- |-----------------------------|
+|#include &lt;deque>                      | import java.util.ArrayDeque;             |from collections import deque|
+|deque&lt;int> dq;                        | Deque<String> deque = new ArrayDeque<>();| dq = deque()                |                                                  |dq.push_front(val);                      | deque.addFirst(val); or deque.offerFirst(val); | dq.appenleft(val)     |                                     
+|dq.push_back(val);                       | deque.addLast(val);                       | dq.append(val)             |                                                                                                               
+                                                                                                                         
 
 
 
