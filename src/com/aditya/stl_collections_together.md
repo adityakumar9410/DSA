@@ -11,7 +11,7 @@
 |int tail = nums.back();                  | int tail = nums.get(nums.size()-1);      |  tail = nums[len(nums)-1]   |    
 |for(vector<int>::iterator it=nums.begin();it!=nums.end();it++){ cout<<*it<<endl; }     |for(int i=0;i<nums.size();i++){ System.out.println(nums.get(i); }  |    for val in nums:  print(val)    |
 | nums.erase(nums.begin());               | nums.remove(0);                          | nums.pop(0)                 |
-| nums.pop_back();                        | nums.remove(nums.size()-1);              | nums.pop()                  |                                                                                               
+| nums.pop_back();                        | nums.remove(nums.size()-1);              | nums.pop()                  |                                               
 | nums.erase(nums.begin()+index);         | nums.remove(index);                      | nums.pop(index)             |
 | remove(nums.begin(), nums.end(), value);| nums.remove(value);                      | nums.remove(value)          |                                                                                                
 
@@ -20,11 +20,16 @@
 |      C++                                |                  Java                    |             Python          | 
 | ----------------------------------------| ---------------------------------------- |-----------------------------|
 |#include &lt;deque>                      | import java.util.ArrayDeque;             |from collections import deque|
-|deque&lt;int> dq;                        | Deque<String> deque = new ArrayDeque<>();| dq = deque()                |                                                  |dq.push_front(val);                      | deque.addFirst(val); or deque.offerFirst(val); | dq.appenleft(val)     |                                     
-|dq.push_back(val);                       | deque.addLast(val);                       | dq.append(val)             |                                                                                                               
-                                                                                                                         
+|deque&lt;int> dq;                        | Deque<String> deque = new ArrayDeque<>();| dq = deque()                |                                                  
+|dq.push_front(val);                      | deque.addFirst(val); or deque.offerFirst(val); | dq.appenleft(val)     |                                     
+|dq.push_back(val);                       | deque.addLast(val);                       | dq.append(val)             |                                                    
+|dq.front();                              | deque.getFirst(); or deque.peekFirst();   | dq[0]                      |
+|dq.back();                               |deque.getLast();                           | dq[-1]                     |  
+|dq.pop_front();                          |deque.removeFirst(); or deque.pollFirst(); | dq.popleft()               | 
+|dq.pop_back();                           |deque.removeLast();                        | dq.pop()                   |
 
-
-
-
-
+  
+### List (Linked List)
+  
+  
+  
