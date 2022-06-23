@@ -27,7 +27,7 @@
 </br>
 [First Repeating](https://github.com/adityakumar9410/algorithms-in-java/blob/main/array/src/FirstRepeating.java)
 </br>
-[Max Multiplication]([https://github.com/adityakumar9410/algorithms-in-java/blob/main/array/src/FirstRepeating.java](https://github.com/adityakumar9410/algorithms-in-java/blob/main/array/src/GetMaxMultiplication.java))
+[Max Multiplication](https://github.com/adityakumar9410/algorithms-in-java/blob/main/array/src/GetMaxMultiplication.java)
 </br>
 [Min Subarry Length For Sorting](https://github.com/adityakumar9410/algorithms-in-java/blob/main/array/src/GetMinSubArrayLengthForSorting.java)
 </br>
